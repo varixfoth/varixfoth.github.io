@@ -8,6 +8,7 @@
         <a-scene embedded arjs>
             <a-assets>
                 <audio id="helmet_sound" src="assets/under_pressure.mp3" response-type="arraybuffer" autoplay="true" loop></audio>
+				<video id="video" src="assets/video.mp4" response-type="arraybuffer" autoplay="true" loop></audio>
                 <a-asset-item id="helmet" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF/SciFiHelmet.gltf"></a-asset-item>
             </a-assets>
 
@@ -25,6 +26,7 @@
 
                 <!-- second entity: reference to the above audio -->
                 <a-entity sound="src: #helmet_sound; volume: 10; loop: true">
+				<a-video src="#video" position="0 0 0" scale="5 5 5">
                 </a-entity>
             </a-marker>
 
