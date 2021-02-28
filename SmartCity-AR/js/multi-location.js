@@ -11,11 +11,28 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'Pokèmon',
+            name: 'Magnemite',
             location: {
-                // lat: <your-latitude>,
-                // lng: <your-longitude>,
+                lat: 47.195838928222656,
+                lng: 20.178117752075195,
             },
+			gtlf: './assets/magnemite/scene.gltf'
+        },
+		{
+            name: 'Articuno',
+            location: {
+                lat: 47.17493488299693,
+                lng: 20.172827842375497,
+            },
+			gtlf: './assets/articuno/scene.gltf'
+        },
+		{
+            name: 'Dragonite',
+            location: {
+                lat: 47.54049226257815,
+                lng: 19.14935719617552,
+            },
+			gtlf: './assets/dragonite/scene.gltf'
         },
     ];
 }
